@@ -1,9 +1,79 @@
-body {
-    background-color: #E09B7D;
-    font-family: 'Open Sans', sans-serif;
+/* pagewide defaults */
+
+html {
+    font-size: 100%;
 }
 
-#main {
+body {
+    background-color: #bffce6;
+    font-family: 'Heebo', sans-serif;
+}
+
+
+h1 {
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* class specific css */
+
+.layout {
+    /* set the page to fill the window height at minimum, with the goal of keeping the footer always at the bottom*/
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content {
+    /* keep the actual content centered and justified with the top of the screen */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+.header { 
+    background-color: #734941;
+}
+
+.main {
+    background-color: #E09B7D;
+    box-sizing: border-box; /* size is determined by the set width and height, and not affected by any padding or border */
+    width: 900px;
+    height: 100%;
+    
     text-align: center;
-    padding: 10%;
+    font-weight: 300;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+    background-color: #734941;
+    width: 100%;
+    height: 52px;
+    box-sizing: border-box;
+    
+    font-weight: 400;
+
+}
+
+.socials_icon {
+    padding: 0;
+    margin: 8px 0 0 8px;
+    height: 35px;
+    width: auto;
 }
