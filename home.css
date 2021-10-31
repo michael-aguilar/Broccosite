@@ -21,6 +21,7 @@ h2 {
 }
 
 a {
+    color: #bffce6; /* should make this a more readable color but idk yet */
     text-decoration: none;
 }
 
@@ -47,6 +48,9 @@ a {
 
 .header { 
     background-color: #734941;
+    box-sizing: border-box;
+    width: 900px;
+    text-align: center;
 }
 
 .main {
