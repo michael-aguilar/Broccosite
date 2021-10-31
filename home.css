@@ -17,12 +17,21 @@ h1 {
 
 h2 {
     font-weight: 400;
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-weight: 400;
     font-size: 1rem;
 }
 
 a {
-    color: #bffce6; /* should make this a more readable color but idk yet */
+    color: #19877E; /* should make this a more readable color but idk yet */
     text-decoration: none;
+}
+
+a:hover {
+    color: #bffce6; /* should make this a more readable color but idk yet */
 }
 
 /* class specific css */
@@ -63,6 +72,25 @@ a {
     font-weight: 300;
 
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.blogContent {
+    /* prob should update this using ems or whatever eventually */
+    text-align: left;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+.blogDirectory {
+    font-weight: 400;
+    text-align: left;
+    line-height: 1.5;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+.blogDirectory h2 {
+    text-align: center;
 }
 
 .footer {
